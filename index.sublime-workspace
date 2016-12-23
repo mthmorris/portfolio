@@ -11,18 +11,49 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3604,
+				"buffer_size": 3693,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "styles/styles.css",
+			"file": "styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 2555,
+				"buffer_size": 2963,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/main.css",
+			"settings":
+			{
+				"buffer_size": 2868,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Portfolio</title>\n\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">\n\n    <link rel=\"stylesheet\" href=\"styles/styles.css\">\n\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto:100,700\" type=\"text/css\">\n</head>\n<body>\n    <div id=\"intro\" class=\"container-fluid hero landscape\">\n        <h1>Spike Spiegel</h1>\n        <h5>Freelance Photographer</h5>\n        <a href=\"#gallery\"><button type=\"button\" class=\"cta\">See More</button></a>\n    </div>\n\n    <div id=\"about\" class=\"container hero\">\n        <h2>About Me</h2>\n\n        <div class=\"row\">\n            <div class=\"col-md-6 left-col\">\n                <h2>I'm a <br> self-taught photographer with a passion for travel and design</h2>\n            </div>\n            <div class=\"col-md-6 right-col\">\n                <h5>I was born in Cape Town, South Africa and moved around a lot as a kid. To keep me distracted, my parents gave me a camera. Since then, I look at the world through a lens. I've visited over 30 countries and taken almost one quarter of a million photographs, and I feel like I'm just getting started. From landscapes to personal portraits and exciting scenes, I love being able to capture a moment. Join me on my journey!</h5>\n            </div>\n        </div>\n    </div>\n\n    <div id=\"gallery\" class=\"container-fluid hero\">\n        <h2>Gallery</h2>\n\n        <div class=\"row\">\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-01.jpg\"></div>\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-02.jpg\"></div>\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-03.jpg\"></div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-04.jpg\"></div>\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-05.jpg\"></div>\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-06.jpg\"></div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-07.jpg\"></div>\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-08.jpg\"></div>\n            <div class=\"col-md-4\"><img src=\"img/gallery/gallery-09.jpg\"></div>\n        </div>\n    </div>\n\n\n\n    <div id=\"contact\" class=\"container-fluid hero\">\n        <h2>Contact Me</h2>\n\n        <p>I'm available for freelance&ndash;from events like weddings to documenting your next adventure, let's chat!</p>\n\n        <a href=\"mailto:mail@example.net\"><button type=\"button\" class=\"cta\">Contact</button></a>\n\n        <div id=\"social\">\n            <a href=\"http://www.twitter.com\"><img src=\"img/icons/twitter.svg\"></a>\n            <a href=\"http://www.instagram.com\"><img src=\"img/icons/instagram.svg\"></a>\n            <a href=\"http://www.medium.com\"><img src=\"img/icons/medium.svg\"></a>\n        </div>\n    </div>\n\n    <div id=\"footer\">\n        <div class=\"footer-item\">\n            <h4>\n                <b>Spike <br> Spiegel</b>\n            </h4>\n        </div>\n        <div class=\"footer-item\">\n            <a href=\"#intro\">About</a>\n        </div>\n        <div class=\"footer-item\">\n            <a href=\"#gallery\">Gallery</a>\n        </div>\n        <div class=\"footer-item\">\n            <a href=\"#contact\">Contact</a>\n        </div>\n        <div class=\"copyright\">&copy; Spike Spiegel</div>\n    </div>\n</body>\n</html>",
+			"file": "/C/Users/Hunter/Downloads/week-4/portfolio/index_wk4.html",
+			"file_size": 3557,
+			"file_write_time": 131259761087621872,
+			"settings":
+			{
+				"buffer_size": 3506,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "$alt-color: #00E2AC;\n\n.hero {\n    font-family: \"Roboto\", serif;\n    text-align: center;\n    min-height: 800px;\n    background-size: cover;\n    padding-bottom: 50px;\n\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column;\n\n    &.landscape {\n        color: white;\n    }\n\n    &.bridge {\n        background-image: url(../img/bridge/full-width.jpg);\n        width: 100%;\n    }\n\n    h1 {\n        line-height: 55px;\n        font-size: 72px;\n    }\n\n    h2 {\n        margin-top: 100px;\n        margin-bottom: 50px;\n        font-size: 40px;\n        line-height: 40px;\n    }\n}\n\n#intro {\n    h1, h5 {\n        text-shadow: rgba(0, 0, 0, .25) 0px 5px 5px;\n    }\n\n    h5 {\n        margin-bottom: 20px;\n        font-size: 24px;\n        font-weight: 700;\n    }\n}\n\n.cta {\n    background-color: black;\n    color: white;\n    padding: 0;\n    width: 180px;\n    font-size: 18px;\n    line-height: 50px;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n\n    &:hover {\n        background-color: #00CFFF;\n    }\n}\n\n#about {\n    min-height: 0px;\n\n    .left-col {\n        color: $alt-color;\n        padding: 20px;\n        text-align: right;\n        text-transform: uppercase;\n        font-weight: 700;\n\n        h2 {\n            margin-top: 0;\n            margin-bottom: 0;\n            font-size: 60px;\n            line-height: 55px;\n        }        \n    }\n\n    .right-col {\n        text-align: left;\n        padding: 20px;\n\n        h5 {\n            font-size: 24px;\n            line-height: 30px;\n        }\n    }\n}\n\n#gallery {\n    background-color: #EEFDF9;\n\n    .col-md-4 {\n        overflow: hidden;\n        padding-top: 0;\n        padding-right: 5px;\n        padding-bottom: 10px;\n        padding-left: 5px;\n\n        img {\n            height: 100%;\n            max-width: 390px;\n            max-height: 380px;\n        }\n    }\n}\n\n#contact p {\n    font-size: 24px;\n    margin-bottom: 40px;\n    max-width: 740px;\n}\n\n#social {\n    padding: 20px;\n\n    a {\n        margin-top: 0;\n        margin-right: 0;\n        margin-bottom: 0;\n        margin-left: 10px;\n        text-decoration: none;\n    }\n\n    img {\n        height: 20px;\n\n        &:hover {\n            opacity: 0.5;\n        }\n    }\n}\n\n#footer {\n    height: 40px;\n    margin-left: 10%;\n    margin-right: 10%;\n    padding-bottom: 150px;\n\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n\n    a {\n        color: black;\n        font-size: 16px;\n        line-height: 40px;\n        padding: 0;\n        margin-left: 5px;\n        margin-right: 20px;\n    }\n\n    .footer-item {\n        flex: 1;\n        max-width: 100px;\n    }\n}\n\n.copyright {\n    margin-left: auto;\n    color: $alt-color;\n}\n\n@media only screen and (max-width: 480px) {\n    #intro {\n        min-height: 640px;\n    }\n\n    #about .left-col h2 {\n        font-size: 42px;\n        line-height: 40px;\n    }\n\n    #footer {\n        margin-left: 20px;\n        margin-right: 20px;\n\n        h4 {\n            margin-right: 20px;\n        }\n    }\n}\n\n@media only screen and (max-width: 992px) {\n    .row {\n        width: 100%;\n    }\n\n    #gallery .col-md-4 {\n        width: 100%;\n\n        img {\n            width: 100%;\n            max-width: 992px;\n            max-height: 900px;\n        }\n    }\n}",
+			"file": "styles_answers/main_wk4.scss",
+			"file_size": 3243,
+			"file_write_time": 131259747689947054,
+			"settings":
+			{
+				"buffer_size": 3243,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -58,6 +89,7 @@
 	},
 	"file_history":
 	[
+		"/C/cygwin64/home/portfolio/styles/styles.css",
 		"/C/cygwin64/home/Hunter/.bash_profile",
 		"/C/Users/Hunter/Downloads/week-3/portfolio/styles/styles1.css",
 		"/C/Users/Hunter/Downloads/week-3.zip"
@@ -104,15 +136,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3604,
+						"buffer_size": 3693,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58,
-								58
+								1550,
+								1550
 							]
 						],
 						"settings":
@@ -122,7 +154,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -130,29 +162,117 @@
 				},
 				{
 					"buffer": 1,
-					"file": "styles/styles.css",
+					"file": "styles/main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2555,
+						"buffer_size": 2963,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2223,
-								2223
+								2166,
+								2166
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2176.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2868,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1422,
+								1422
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Hunter/Downloads/week-4/portfolio/index_wk4.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3135,
+								3150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "styles_answers/main_wk4.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2996,
+								3040
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
